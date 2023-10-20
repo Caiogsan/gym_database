@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto"
 import { sql } from "./db.js"
 
 export class Database {
-    #itens = new Map()
+    
 
     async list(search){
         let itens
@@ -23,7 +23,7 @@ export class Database {
 
         const { image, title, rate, cost, description} = item
 
-        await sql`insert into itens (id, image, title, rate, cost, description) VALUES (${itemId, image, title, rate, cost, description})`
+        await sql`INSERT INTO itens (id, image, title, rate, cost, description) VALUES (${itemId}, ${image}, ${title}, ${rate}, ${cost}, ${description})`
     }
 
     async update(id, item){
