@@ -1,5 +1,6 @@
 // npm install fastify
 // npm install postgres
+// teste
 
 import { fastify } from 'fastify'
 import { Database } from './database.js'
