@@ -10,7 +10,7 @@ export class Database {
         if(search){
             itens = await sql`select * from itens where ilike ${'%' + search + '%'}`
         } else {
-            videos = await sql`select * from itens`
+            itens = await sql`select * from itens`
         }   
         
         return itens
