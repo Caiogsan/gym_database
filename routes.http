@@ -4,8 +4,8 @@ Content-Type: application/json
 {
     "image": "https://nutrata.com.br/wp-content/uploads/2022/12/protobar-sabor-brownie-de-chocolate-com-dulce-de-leche-havanna-display-8-barras-de-70g.png",
     "title": "PROTOBAR SABOR BROWNIE DE CHOCOLATE COM DULCE DE LECHE HAVANNA DISPLAY C/ 8 BARRAS DE 70 G",
-    
-    
+    "rate" : 4,
+    "cost": "teste",
     "description": "A Protobar dulce de leche Havanna combina a autenticidade e tradição do melhor dulce de leche argentino com a melhor barra de proteína do mercado."
 }
 
