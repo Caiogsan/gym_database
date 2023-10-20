@@ -8,8 +8,8 @@ const server = fastify()
 const database = new Database
 
 
-server.post('/market', async(req, res) => {
-    const { image, title, rate, cost, description } = req.body
+server.post('/market', async(request, reply) => {
+    const { image, title, rate, cost, description } = request.body
 
     await database.create({
         image,
@@ -22,19 +22,19 @@ server.post('/market', async(req, res) => {
     return RemotePlayback.status(201).send()
 })
 
-server.get('/market', async (req) => {
-    const search = req.query.search
+server.get('/market', async (request) => {
+    const search = request.query.search
 
-    const videos = await database.list(search)
+    const itens = await database.list(search)
 
-    return videos
+    return itens
 })
 
 server.put('/market/:id', async(req, res) => {
-    const videoId = request.params.id
+    const itemId = request.params.id
     const { image, title, rate, cost, description } = req.body
 
-    await database.update(videoId, {
+    await database.update(itemId, {
         image,
         title,
         rate,
