@@ -20,7 +20,7 @@ server.post('/market', async(request, reply) => {
         description
     })
 
-    return RemotePlayback.status(201).send()
+    return reply.status(201).send()
 })
 
 server.get('/market', async (request) => {

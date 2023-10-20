@@ -11,6 +11,6 @@ Content-Type: application/json
 
 ###
 
-GET https://academia-database.onrender.com/itens
+GET https://academia-database.onrender.com/market
 
 ###
