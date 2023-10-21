@@ -14,3 +14,12 @@ Content-Type: application/json
 GET https://academia-database.onrender.com/market
 
 ###
+
+PUT https://academia-database.onrender.com/market/1b26685d-1fe8-4161-b4ca-100ad53efbad
+Content-Type: application/json
+
+{
+    "title" : "Video 02",
+    "description" : "Esse é o primeiro video alterado 02",
+    "duration" : 180
+}

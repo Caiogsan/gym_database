@@ -46,8 +46,12 @@ server.put('/market/:id', async(req, res) => {
     return replay.status(204).send()
 })
 
-server.delete('/market/:id', () => {
-    return 'carai'
+server.delete('/market/:id', async(req, res) => {
+    const videoId = req.params.id
+
+    await database.delete(videoId)
+
+    return reply.status(204).send()
 })
 
 
