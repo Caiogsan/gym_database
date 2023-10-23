@@ -9,7 +9,7 @@ const server = fastify()
 const database = new Database
 
 server.addHook('onRequest', (req, res, done) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000/store')
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     done()
