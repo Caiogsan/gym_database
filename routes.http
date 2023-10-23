@@ -2,11 +2,11 @@ POST https://academia-database.onrender.com/market
 Content-Type: application/json
 
 {
-    "image": "https://nutrata.com.br/wp-content/uploads/2022/12/protobar-sabor-brownie-de-chocolate-com-dulce-de-leche-havanna-display-8-barras-de-70g.png",
-    "title": "PROTOBAR SABOR BROWNIE DE CHOCOLATE COM DULCE DE LECHE HAVANNA DISPLAY C/ 8 BARRAS DE 70 G",
+    "image": "https://nutrata.com.br/wp-content/webp-express/webp-images/uploads/2023/03/Creatinup-300g.jpg.webp",
+    "title": "Creatina Creapure 300G",
     "rate" : 4,
-    "cost": "teste",
-    "description": "A Protobar dulce de leche Havanna combina a autenticidade e tradição do melhor dulce de leche argentino com a melhor barra de proteína do mercado."
+    "cost": "274,00",
+    "description": "Creapure é considerada a creatina de ultima geração com 100% pureza. Essa é uma marca premium conhecida por seu selo de auten..."
 }
 
 ###
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE https://academia-database.onrender.com/market/1b26685d-1fe8-4161-b4ca-100ad53efbad
+DELETE https://academia-database.onrender.com/market/3d4c61fe-a42e-4adc-a724-d821ab894f17
