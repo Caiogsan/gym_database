@@ -9,7 +9,7 @@ const server = fastify()
 const database = new Database
 
 server.addHook('onRequest', (req, res, done) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000/store')
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     done()
@@ -39,7 +39,7 @@ server.get('/market', async (request) => {
 })
 
 server.put('/market/:id', async(req, res) => {
-    const itemId = request.params.id
+    const itemId = req.params.id
     const { image, title, rate, cost, description } = req.body
 
     await database.update(itemId, {
