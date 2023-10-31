@@ -29,7 +29,7 @@ export class Database {
     async update(id, item){
         const { image, title, rate, cost, description } = item
 
-        await sql`update itens set image = ${image}, title = ${title}, rate = ${rate}, cost = ${cost}, description = ${description}`
+        await sql`update itens set image = ${image}, title = ${title}, rate = ${rate}, cost = ${cost}, description = ${description} WHERE id = ${id}`
     }
     
     async delete(id){

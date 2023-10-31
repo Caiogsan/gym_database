@@ -1,5 +1,6 @@
 // npm install fastify
 // npm install postgres
+// EXTENSION REST para fazer requisições
 // teste
 
 import { fastify } from 'fastify'
