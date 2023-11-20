@@ -18,7 +18,7 @@ server.addHook('onRequest', (req, res, done) => {
 })
 
 server.addHook('onRequest', (req, res, done) => {
-    res.header('Access-Control-Allow-Origin', 'https://caiogsan.github.io/proj-acad/')
+    res.header('Access-Control-Allow-Origin', 'https://caiogsan.github.io')
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     done()
