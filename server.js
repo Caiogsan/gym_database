@@ -8,19 +8,17 @@ import { fastify } from 'fastify'
 import { Database } from './database.js'
  
 const server = fastify()
-const database = new Database
+const database = new Database()
 
 server.addHook('onRequest', (req, res, done) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    done()
-})
-
-server.addHook('onRequest', (req, res, done) => {
-    res.header('Access-Control-Allow-Origin', 'https://caiogsan.github.io')
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    const allowedOrigins = ['http://localhost:3000', 'https://caiogsan.github.io']
+    const origin = req.headers.origin
+    
+    if(allowedOrigins.includes(origin)){
+        res.header('Access-Control-Allow-Origin', origin)
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+        res.header('Access-Control-Allow-Headers', 'Content-Type');
+    }
     done()
 })
 
