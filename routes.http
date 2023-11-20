@@ -2,11 +2,11 @@ POST https://academia-database.onrender.com/market
 Content-Type: application/json
 
 {
-    "image": "https://nutrata.com.br/wp-content/uploads/2022/05/whey-grego-bar-sabor-dulce-de-leche-havanna-display-c-12-barras-de-40-gr.png.webp",
-    "title": "Whey Grego Bar sabor Dulce de Leche HAVANNA display c/ 12 barras de 40 gr",
+    "image": "https://nutrata.com.br/wp-content/webp-express/webp-images/uploads/2023/06/combo-treino-energia.jpg.webp",
+    "title": "COMBO TREINO + ENERGIA",
     "rate" : 5,
-    "cost": "111,86",
-    "description": "A melhor barra de proteína eleita pelos consumidores combinada a tradição do dulce de leche argentino da Havanna"
+    "cost": "278,20",
+    "description": "Experimente o combo do W100, um whey protein concentrado de alta qualidade, junto ao Four Beta Plus, uma fórmula desenvolvida p..."
 }
 
 ###
@@ -15,15 +15,15 @@ GET https://academia-database.onrender.com/market
 
 ###
 
-PUT https://academia-database.onrender.com/market/:d0cf6741-f54f-49f4-b2bc-4541910f3e6e
+PUT https://academia-database.onrender.com/market/f32e4539-d3a2-4a89-b1fd-7f95efee3a6d
 Content-Type: application/json
 
 {
     "image": "https://nutrata.com.br/wp-content/uploads/2022/05/whey-grego-bar-sabor-dulce-de-leche-havanna-display-c-12-barras-de-40-gr.png.webp",
-    "title": "dwwadadwadwadaway c/ 12 barras de 40 gr",
+    "title": "Whey Grego Bar sabor Dulce de Leche HAVANNA display c/ 12 barras de 40 gr",
     "rate" : 5,
     "cost": "111,86",
-    "description": "A melhor barra de proteína eleita pelos consumidores combinada a tradição do dulce de leche argentino da Havanna, uma das escolhas mais saborosas para se experimentar."
+    "description": "A melhor barra de proteína eleita pelos consumidores combinada a tradição do dulce de leche argentino da Havanna. Uma das escolha mais s..."
 }
 
 ###
